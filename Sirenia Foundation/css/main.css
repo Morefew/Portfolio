@@ -15,12 +15,12 @@ font-family: "Work Sans", sans-serif;
 }
 
 body {
+  background-color: rgb(31, 31, 31);
   font-family: "Work Sans", sans-serif;
 }
 
 .header {
   align-items: center;
-  /* background-color: rgb(200, 170, 160); */
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
@@ -75,7 +75,6 @@ body {
 }
 
 .btn_get_involved {
-  /* background-color: rgba(16, 62, 122, 0.625); */
   background: linear-gradient(rgba(31, 31, 31, 0), rgba(31, 31, 31, 0.16));
   border-radius: 25px;
   border: none;
@@ -102,14 +101,12 @@ body {
   background-color: rgba(10, 163, 194, 0.55);
   color: rgba(16, 62, 122, 0.625);
   cursor: pointer;
-  /* text-decoration: underline rgba(255, 255, 255, 0.625) 1.5px; */
   transition: background-color 0.8s;
-  /* transition: text-decoration 0.8s; */
 }
 .hero {
   background-color: red;
-  min-height: 45vh;
-  width: 100vw;
+  /* height: 65vh; */
+  width: 100%;
   position: relative;
   z-index: 0;
 }
@@ -117,35 +114,44 @@ body {
 .grad {
   background: linear-gradient(
     rgba(31, 31, 31, 0),
-    rgba(31, 31, 31, 0.502),
+    rgba(31, 31, 31, 0.3),
+    rgba(31, 31, 31, 0.2),
     rgb(31, 31, 31)
   );
-  min-height: 100%;
-  min-width: 100%;
+  height: 100%;
+  width: 100%;
   position: absolute;
   z-index: 2;
 }
 
 .hero img {
   max-width: 100%;
-  position: absolute;
+  position: relative;
   z-index: 1;
 }
+
 .title_hero {
   color: rgb(255, 255, 255);
-  font-size: 3rem;
-  font-weight: 600;
-  margin-top: -18%;
-  margin-left: 40%;
+  margin-left: 30vw;
+  margin-top: -100px;
   position: absolute;
+  text-align: center;
   z-index: 3;
 }
 
-.transition {
-  background: linear-gradient(rgb(31, 31, 31), rgba(31, 31, 31, 0.708));
-  height: 120vh;
-  margin-top: -30px;
-  position: relative;
-  width: 100vw;
-  z-index: 10;
+.title_hero h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+}
+
+.title_hero h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+  position: absolute;
+  z-index: 4;
 }
