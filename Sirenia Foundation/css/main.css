@@ -30,7 +30,6 @@ body {
   z-index: 50;
 }
 .main_logo {
-  background-color: red;
   height: 4rem;
   width: 4rem;
 }
@@ -104,10 +103,8 @@ body {
   transition: background-color 0.8s;
 }
 .hero {
-  background-color: red;
-  /* height: 65vh; */
-  width: 100%;
   position: relative;
+  width: 100%;
   z-index: 0;
 }
 
