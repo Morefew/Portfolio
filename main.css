@@ -1,0 +1,151 @@
+font-family: "Open Sans", sans-serif;
+
+font-family: "Work Sans", sans-serif;
+
+:root {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  border: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.header {
+  align-items: center;
+  /* background-color: rgb(200, 170, 160); */
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+  position: absolute;
+  width: 100vw;
+  z-index: 50;
+}
+.main_logo {
+  background-color: red;
+  height: 4rem;
+  width: 4rem;
+}
+
+.navigation {
+  display: flex;
+  flex-grow: 3;
+  height: 4rem;
+  left: 30%;
+}
+
+.navigation ul {
+  align-items: center;
+  display: flex;
+  gap: 1rem 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  border: rgb(0, 111, 133) 1px solid;
+  border-radius: 25px;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.235);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  min-width: 5vw;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navigation a:hover {
+  background-color: rgba(16, 62, 122, 0.625);
+  border: none;
+  color: rgb(10, 163, 194);
+  transition: background-color 1s ease-in-out;
+  transition: box-shadow 1s ease-in-out;
+}
+
+.btn_get_involved {
+  /* background-color: rgba(16, 62, 122, 0.625); */
+  background: linear-gradient(rgba(31, 31, 31, 0), rgba(31, 31, 31, 0.16));
+  border-radius: 25px;
+  border: none;
+  box-shadow: 180deg 0 0 3px rgba(31, 31, 31, 0.653);
+  box-shadow: inset 0 0 40px rgba(31, 31, 31, 0.351);
+  margin-right: 2rem;
+}
+
+.btn_get_involved a {
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 1.3vmin;
+  font-weight: 600;
+  max-height: 1.8rem;
+  min-width: 5rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgb(10, 163, 194);
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn_get_involved:hover {
+  background-color: rgba(10, 163, 194, 0.55);
+  color: rgba(16, 62, 122, 0.625);
+  cursor: pointer;
+  /* text-decoration: underline rgba(255, 255, 255, 0.625) 1.5px; */
+  transition: background-color 0.8s;
+  /* transition: text-decoration 0.8s; */
+}
+.hero {
+  background-color: red;
+  min-height: 45vh;
+  width: 100vw;
+  position: relative;
+  z-index: 0;
+}
+
+.grad {
+  background: linear-gradient(
+    rgba(31, 31, 31, 0),
+    rgba(31, 31, 31, 0.502),
+    rgb(31, 31, 31)
+  );
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.hero img {
+  max-width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.title_hero {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: -18%;
+  margin-left: 40%;
+  position: absolute;
+  z-index: 3;
+}
+
+.transition {
+  background: linear-gradient(rgb(31, 31, 31), rgba(31, 31, 31, 0.708));
+  height: 120vh;
+  margin-top: -30px;
+  position: relative;
+  width: 100vw;
+  z-index: 10;
+}
