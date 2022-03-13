@@ -15,7 +15,7 @@ font-family: "Work Sans", sans-serif;
 }
 
 body {
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(10, 10, 10);
   font-family: "Work Sans", sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
   gap: 0.5rem;
   justify-content: space-between;
   margin-top: 1rem;
-  position: absolute;
+  position: relative;
   width: 100vw;
   z-index: 50;
 }
@@ -74,11 +74,11 @@ body {
 }
 
 .btn_get_involved {
-  background: linear-gradient(rgba(31, 31, 31, 0), rgba(31, 31, 31, 0.16));
+  background: linear-gradient(rgba(10, 10, 10, 0), rgba(10, 10, 10, 0.16));
   border-radius: 25px;
   border: none;
-  box-shadow: 180deg 0 0 3px rgba(31, 31, 31, 0.653);
-  box-shadow: inset 0 0 40px rgba(31, 31, 31, 0.351);
+  box-shadow: 180deg 0 0 3px rgba(10, 10, 10, 0.653);
+  box-shadow: inset 0 0 40px rgba(10, 10, 10, 0.351);
   margin-right: 2rem;
 }
 
@@ -103,21 +103,28 @@ body {
   transition: background-color 0.8s;
 }
 .hero {
-  position: relative;
-  width: 100%;
-  z-index: 0;
+  background-image: url(../imgs/manatee-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
 
-.grad {
+.hero_degrad {
   background: linear-gradient(
-    rgba(31, 31, 31, 0),
-    rgba(31, 31, 31, 0.3),
-    rgba(31, 31, 31, 0.2),
-    rgb(31, 31, 31)
+    rgba(10, 10, 10, 0),
+    rgba(10, 10, 10, 0.3),
+    rgba(10, 10, 10, 0.2),
+    rgb(10, 10, 10)
   );
   height: 100%;
   width: 100%;
-  position: absolute;
+  top: 900px;
+  position: relative;
   z-index: 2;
 }
 
@@ -129,26 +136,32 @@ body {
 
 .title_hero {
   color: rgb(255, 255, 255);
-  margin-left: 30vw;
-  margin-top: -100px;
-  position: absolute;
-  text-align: center;
+  left: 15vw;
+  top: -40vh;
+  position: relative;
+  width: 70vw;
   z-index: 3;
 }
 
 .title_hero h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 3.2rem;
+  text-align: center;
 }
 
 .title_hero h2 {
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 40px;
   text-align: center;
   letter-spacing: 1px;
-  position: absolute;
-  z-index: 4;
+  position: relative;
+}
+
+main {
+  background-color: red;
+  width: 100vw;
+  height: 600px;
 }
