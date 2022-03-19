@@ -1,6 +1,11 @@
 font-family: "Open Sans", sans-serif;
-
 font-family: "Work Sans", sans-serif;
+
+@media screen and (min-width: 600px) {
+  .learnmore {
+    background-color: turquoise;
+  }
+}
 
 :root {
   box-sizing: border-box;
@@ -21,7 +26,6 @@ body {
 body {
   background-color: rgb(10, 10, 10);
   font-family: "Work Sans", sans-serif;
-  /* position: relative; */
 }
 
 .header {
@@ -31,7 +35,7 @@ body {
   justify-content: space-between;
   margin-top: 1rem;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 50;
 }
 .main_logo {
@@ -40,6 +44,7 @@ body {
 }
 
 .navigation {
+  background-color: rgba(10, 10, 10, 0.351);
   display: flex;
   flex-grow: 3;
   height: 4rem;
@@ -55,128 +60,122 @@ body {
   padding: 0;
 }
 
+.navigation li {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navigation a {
   color: rgb(255, 255, 255);
-  display: inline-block;
-  font-size: calc(1vw + 0.3em);
+  font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 1.6px;
-  padding: 4px 10px;
+  padding: 1rem 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
-.navigation a:hover {
-  background-color: rgba(16, 62, 122, 0.625);
-  color: rgb(10, 163, 194);
+.navigation li:hover {
+  background-color: hsla(190, 93%, 46%);
+  color: rgb(0, 71, 85);
 }
 
-.btn_get_involved {
+button.btn_get_involved {
   background: linear-gradient(rgba(10, 10, 10, 0), rgba(10, 10, 10, 0.16));
-  border-radius: 25px;
   border: none;
-  box-shadow: 180deg 0 0 3px rgba(10, 10, 10, 0.653);
-  box-shadow: inset 0 0 40px rgba(10, 10, 10, 0.351);
+  box-shadow: 180deg 1px 1px 25px 10px rgb(10, 10, 10);
+  box-shadow: inset 0 0 2px rgb(8, 190, 226);
+  height: 4rem;
   margin-right: 2rem;
 }
 
 .btn_get_involved a {
-  color: rgb(255, 255, 255);
+  color: rgb(126, 234, 255);
   display: inline-block;
-  font-size: calc(0.8vw + 0.2rem);
+  font-size: 0.9rem;
   font-weight: 600;
   min-width: 5rem;
   letter-spacing: 1px;
   text-shadow: 1px 1px 3px rgb(10, 163, 194);
-  padding: 1rem;
+  padding: 1.3rem;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .btn_get_involved:hover {
   background-color: rgba(10, 163, 194, 0.55);
-  color: rgba(16, 62, 122, 0.625);
   cursor: pointer;
-  transition: background-color 0.8s;
+  transition: background-color 0.5s;
 }
-
+.btn_get_involved a:hover {
+  color: rgb(255, 255, 255);
+}
 .hero {
   background-image: url(../imgs/manatee-hero.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-color: fuchsia;
+  background-color: rgb(0, 154, 181);
   position: relative;
   max-width: 100%;
-  max-height: 100%;
-}
-
-.hero__degrad {
-  background: linear-gradient(
-    rgba(10, 25, 22, 0.2),
-    rgba(10, 25, 22, 0.1),
-    rgb(10, 15, 12)
-  );
   height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
 }
 
-.hero img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+.hero::after {
+  content: " ";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: linear-gradient(rgba(0, 0, 0, 0), 70%, rgba(0, 0, 0, 0.5));
 }
 
 .hero__title {
   color: rgb(255, 255, 255);
-  /* left: 20vw; */
-  top: 55vh;
+  left: 15vw;
+  top: 60vh;
   text-align: center;
-  position: relative;
-  max-width: calc(70vw - 2rem);
+  position: absolute;
+  max-width: 60vw;
   margin: auto;
-  z-index: 2;
+  z-index: 1;
 }
+
 .hero__title h1 {
-  font-size: calc(5vw + 2rem);
+  font-size: 4rem;
   font-weight: 600;
-  line-height: calc(5vw + 1.5rem);
+  line-height: 3.5rem;
 }
 
 .hero__title h2 {
-  font-size: calc(3vw + 0.2rem);
+  font-size: 2.2rem;
   font-weight: 300;
-  line-height: calc(3vw + 0.5rem);
+  line-height: 2.5rem;
   letter-spacing: 1px;
 }
 
 main {
   background-color: red;
-  max-width: 100%;
-  max-height: 100%;
   padding: 1rem;
   position: relative;
 }
 
 .learnmore {
   display: flex;
-  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
 .learnmore h2 {
   color: rgb(255, 255, 255);
   font-size: calc(2vw + 2.5rem);
-  /* flex: 100;
-  padding-right: 50px; */
-
-  /* height: 3rem;
-  width: rem; */
+  flex: 0 0 225px;
+  padding-right: 50px;
 }
 
 .learnmore p {
@@ -185,7 +184,8 @@ main {
 }
 
 .learnmore__species {
-  /* flex: 1; */
+  background-color: rosybrown;
+  padding: 0.5rem;
 }
 
 footer {
