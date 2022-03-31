@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="">Bear Creek Park MTB Trail Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thanks for coming to Bear Creek Park MTB Trail. By filling the form
+          below you help us understand and address what is needed to improve
+          your next visit.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue"></span
+          ></label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which experience level best describes you?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select experience level</option>
+            <option value="Novice">New to the Sport</option>
+            <option value="Novice +">Novice (Green Trails)</option>
+            <option value="Intermediate">Intermediate: (Blue Trails)</option>
+            <option value="Intermediate +">
+              Intermediate +: (Blue/Black Trails)
+            </option>
+            <option value="Advanced">Advanced: (Black Trails)</option>
+            <option value="Expert">Expert: (Double Black Trails)</option>
+            <option value="Pro">Pro: (Triple Black/Extreme Terrain)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What level of difficulty do you give to the Bear Creek Park MTB
+            Trail?
+          </p>
+          <label>
+            <input
+              name="user-recommend"
+              value="extremely easy"
+              type="radio"
+              class="input-radio"
+            />Extremely easy</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="Easy"
+              type="radio"
+              class="input-radio"
+            />Easy</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              value="moderate"
+              type="radio"
+              class="input-radio"
+            />Moderate</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              value="hard"
+              type="radio"
+              class="input-radio"
+            />Hard</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              value="extremely hard"
+              type="radio"
+              class="input-radio"
+            />Extremely Hard</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>How frequently do you ride?</p>
+          <select
+            id="ride-frequency"
+            name="rideFrequency"
+            class="form-control"
+            required
+          >
+            <option disabled selected value>Select a frecuency</option>
+            <option value="daily">Daily</option>
+            <option value="twiceWeek">Twice a Week</option>
+            <option value="weekly">Weekly</option>
+            <option value="twiceMonth">Twice a month</option>
+            <option value="monthly">Monthly</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see added or improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="drinking-water"
+              type="checkbox"
+              class="input-checkbox"
+            />Drinking water access points</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="lift-services"
+              type="checkbox"
+              class="input-checkbox"
+            />Lift services</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="night-riding"
+              type="checkbox"
+              class="input-checkbox"
+            />Night riding</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="pump-track"
+              type="checkbox"
+              class="input-checkbox"
+            />Pump track</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="restrooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Restrooms</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="trail-condition"
+              type="checkbox"
+              class="input-checkbox"
+            />Trail condition</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="bike-shop"
+              type="checkbox"
+              class="input-checkbox"
+            />Bike shop</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="camping-lodging"
+              type="checkbox"
+              class="input-checkbox"
+            />Camping & lodging</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+          <p>Thank you for taking the time to help us improve</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
