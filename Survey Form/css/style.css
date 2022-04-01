@@ -23,25 +23,91 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Raleway', sans-serif;
+  background-color: var(--coyote-brown);
+  background: url("../imgs/creek.jpg");
+  background-size: 150%;
+  background-attachment: fixed;
 }
 
 .container{
-  background-color: var(--wild-blue-yonder);
+  background-color:#fcd8a2d0;
   width: 50vw;
-  margin: auto;
-  top: 50px;
+  margin: 0 auto;
+  top: 5vh;
   position: relative;
+  border-radius: 25px;
 }
 
 .header{
-  background-color: var(--coyote-brown);
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headtext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  color: var(--black-chocolate);
+
+}
+
+.logo{
+  height: 30vh;
 }
 
 #title{
   font-size: 3rem;
-
+  
 }
 
 .text-center{
   text-align: center;
+}
+.description{
+font-size: 0.8rem;
+}
+#survey-form{
+  padding: 0 8vw;
+}
+
+.form-group{
+  margin-bottom: 3rem;
+
+}
+
+.form-group>p{
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-control{
+  /* border: 2px var(--coyote-brown) solid; */
+  border-radius: 25px;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.5rem;
+  width: 80%;
+  margin-bottom: 1rem;
+  display: inline-block;
+
+}
+
+#name-label, #email-label, #number-label, .question {
+  font:bold;
+  
+}
+
+
+.input-checkbox{
+margin: 0.5rem;
+border-radius: 25px;
+
+
+}
+
+.input-textarea{
+width: 30vw;
 }

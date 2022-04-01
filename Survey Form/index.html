@@ -9,14 +9,23 @@
   </head>
   <body>
     <div class="container">
-      <header class="header text-center">
-        <h1 id="title" class="">Bear Creek Park</h1>
-        <h2>MTB Trail Survey Form</h2>
-        <p id="description" class="description text-center">
-          Thanks for coming to Bear Creek Park MTB Trail. By filling the form
-          below you help us understand and address what is needed to improve
-          your next visit.
-        </p>
+      <header class="header">
+        <figure>
+          <img
+            class="logo"
+            src="./imgs/BCP Logo mono.png"
+            alt="Bear Creek Park Logo"
+          />
+        </figure>
+        <div class="headtext">
+          <h1 id="title" class="text-center">Bear Creek Park</h1>
+          <h2 class="text-center">MTB Trail Survey Form</h2>
+          <p id="description" class="description text-center">
+            Thanks for coming to Bear Creek Park MTB Trail. By filling the form
+            below you help us understand and address what is needed to improve
+            your next visit.
+          </p>
+        </div>
       </header>
       <form id="survey-form">
         <div class="form-group">
@@ -37,7 +46,7 @@
             name="email"
             id="email"
             class="form-control"
-            placeholder="Enter your Email"
+            placeholder="Enter your email"
             required
           />
         </div>
@@ -56,7 +65,7 @@
           />
         </div>
         <div class="form-group">
-          <p>Which experience level best describes you?</p>
+          <p class="question">Which experience level best describes you?</p>
           <select id="dropdown" name="role" class="form-control" required>
             <option disabled selected value>Select experience level</option>
             <option value="Novice">New to the Sport</option>
@@ -72,7 +81,7 @@
         </div>
 
         <div class="form-group">
-          <p>
+          <p class="question">
             What level of difficulty do you give to the Bear Creek Park MTB
             Trail?
           </p>
@@ -119,7 +128,7 @@
         </div>
 
         <div class="form-group">
-          <p>How frequently do you ride?</p>
+          <p class="question">How frequently do you ride?</p>
           <select
             id="ride-frequency"
             name="rideFrequency"
@@ -221,7 +230,9 @@
           <button type="submit" id="submit" class="submit-button">
             Submit
           </button>
-          <p>Thank you for taking the time to help us improve</p>
+          <p class="text-center">
+            Thank you for taking the time to help us improve
+          </p>
         </div>
       </form>
     </div>
