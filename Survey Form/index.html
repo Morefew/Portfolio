@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
     <div class="container">
@@ -27,6 +27,9 @@
           </p>
         </div>
       </header>
+      <div>
+        <img class="treeline" src="./imgs/tree line.svg" alt="" />
+      </div>
       <form id="survey-form">
         <div class="form-group">
           <label id="name-label" for="name">Name</label>
@@ -85,7 +88,7 @@
             What level of difficulty do you give to the Bear Creek Park MTB
             Trail?
           </p>
-          <label>
+          <label class="multisel">
             <input
               name="user-recommend"
               value="extremely easy"
@@ -93,7 +96,7 @@
               class="input-radio"
             />Extremely easy</label
           >
-          <label>
+          <label class="multisel">
             <input
               name="user-recommend"
               value="Easy"
@@ -101,7 +104,7 @@
               class="input-radio"
             />Easy</label
           >
-          <label
+          <label class="multisel"
             ><input
               name="user-recommend"
               value="moderate"
@@ -109,7 +112,7 @@
               class="input-radio"
             />Moderate</label
           >
-          <label
+          <label class="multisel"
             ><input
               name="user-recommend"
               value="hard"
@@ -117,7 +120,7 @@
               class="input-radio"
             />Hard</label
           >
-          <label
+          <label class="multisel"
             ><input
               name="user-recommend"
               value="extremely hard"

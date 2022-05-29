@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
 
 :root {
   --coyote-brown: #7e5e29;
@@ -22,92 +22,121 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: var(--coyote-brown);
   background: url("../imgs/creek.jpg");
   background-size: 150%;
   background-attachment: fixed;
 }
 
-.container{
-  background-color:#fcd8a2d0;
+.container {
+  background-color: #fcd8a2;
   width: 50vw;
   margin: 0 auto;
   top: 5vh;
   position: relative;
-  border-radius: 25px;
 }
 
-.header{
-  padding: 3rem 1rem;
+.header {
+  padding: 2vw 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #214020;
+  width: 100%;
 }
-.headtext{
+.headtext {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 30vh;
-  color: var(--black-chocolate);
-
+  padding: 1.6rem;
+  width: 50%;
+  color: white;
 }
 
-.logo{
-  height: 30vh;
+.logo {
+  height: auto;
+  width: 10vw;
 }
 
-#title{
+#title {
   font-size: 3rem;
-  
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
-.description{
-font-size: 0.8rem;
-}
-#survey-form{
-  padding: 0 8vw;
+.description {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
 }
 
-.form-group{
-  margin-bottom: 3rem;
-
+.treeline {
+  position: relative;
+  top: -73px;
+  clip-path: border-box;
+  width: 100%;
+}
+#survey-form {
+  padding: 0 5vw;
 }
 
-.form-group>p{
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group > p {
   line-height: 1.5rem;
   margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
-.form-control{
-  /* border: 2px var(--coyote-brown) solid; */
+.form-group label {
+  display: block;
+}
+.submit-button {
+  background-color: var(--wild-blue-yonder);
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  box-shadow: #041938 0 0 6px, inset 0 0 1px;
+}
+
+.form-group:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-style: italic;
+  margin-bottom: 5rem;
+}
+
+.form-control {
   border-radius: 25px;
   font-size: 0.8rem;
   text-align: center;
   padding: 0.5rem;
-  width: 80%;
+  width: 100%;
   margin-bottom: 1rem;
   display: inline-block;
-
 }
 
-#name-label, #email-label, #number-label, .question {
-  font:bold;
-  
+.multisel {
+  display: block;
+  margin: 0.5rem 0;
 }
 
-
-.input-checkbox{
-margin: 0.5rem;
-border-radius: 25px;
-
-
+.input-checkbox {
+  margin-right: 0.5rem;
 }
 
-.input-textarea{
-width: 30vw;
+.input-textarea {
+  padding: 0.6rem;
+  width: 100%;
+  height: 10rem;
+  border-radius: 25px;
 }
